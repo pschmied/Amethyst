@@ -84,6 +84,8 @@
 		5C09C2AB18C1400F00CF5E6A /* AMRowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C09C2AA18C1400F00CF5E6A /* AMRowLayout.m */; };
 		5CC5FEE718C5083500895144 /* AMRowLayoutTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5FEE618C5083500895144 /* AMRowLayoutTest.m */; };
 		6718BDA0D79F4A19BED950F4 /* libPods-AmethystTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BFE9CAC8A4496793B4217D /* libPods-AmethystTests.a */; };
+		D05555FD19B27FBA00EC7FA0 /* icon-statusitem-darkmode.png in Resources */ = {isa = PBXBuildFile; fileRef = D05555FB19B27FBA00EC7FA0 /* icon-statusitem-darkmode.png */; };
+		D05555FE19B27FBA00EC7FA0 /* icon-statusitem-darkmode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D05555FC19B27FBA00EC7FA0 /* icon-statusitem-darkmode@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -225,6 +227,8 @@
 		5C09C2AA18C1400F00CF5E6A /* AMRowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMRowLayout.m; sourceTree = "<group>"; };
 		5CC5FEE618C5083500895144 /* AMRowLayoutTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMRowLayoutTest.m; sourceTree = "<group>"; };
 		B0530B06777D42039F419322 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D05555FB19B27FBA00EC7FA0 /* icon-statusitem-darkmode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-statusitem-darkmode.png"; sourceTree = "<group>"; };
+		D05555FC19B27FBA00EC7FA0 /* icon-statusitem-darkmode@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-statusitem-darkmode@2x.png"; sourceTree = "<group>"; };
 		E6950BE9E95C4952BCA05552 /* Pods-AmethystTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmethystTests.xcconfig"; path = "Pods/Pods-AmethystTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		F3BFE9CAC8A4496793B4217D /* libPods-AmethystTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AmethystTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -367,6 +371,8 @@
 		402DB6E81742E41A00D1C936 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D05555FB19B27FBA00EC7FA0 /* icon-statusitem-darkmode.png */,
+				D05555FC19B27FBA00EC7FA0 /* icon-statusitem-darkmode@2x.png */,
 				404A5FAC18442CD5009B86D3 /* icon-statusitem-disabled.png */,
 				404A5FAD18442CD5009B86D3 /* icon-statusitem-disabled@2x.png */,
 				4015D9B317517CE100548DBE /* icon-statusitem.png */,
@@ -594,11 +600,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				402DB6EC1742E41A00D1C936 /* InfoPlist.strings in Resources */,
+				D05555FE19B27FBA00EC7FA0 /* icon-statusitem-darkmode@2x.png in Resources */,
 				402DB6F21742E41A00D1C936 /* Credits.rtf in Resources */,
 				402DB6F81742E41A00D1C936 /* MainMenu.xib in Resources */,
 				404A5FAE18442CD5009B86D3 /* icon-statusitem-disabled.png in Resources */,
 				404A5FB018442CD5009B86D3 /* icon-statusitem-disabled@2x.png in Resources */,
 				4015D9B2175146CC00548DBE /* Amethyst.iconset in Resources */,
+				D05555FD19B27FBA00EC7FA0 /* icon-statusitem-darkmode.png in Resources */,
 				40B3927C1814967F009A296B /* AMLayoutNameWindow.xib in Resources */,
 				4015D9B517517CE100548DBE /* icon-statusitem.png in Resources */,
 				4015D9B617517CE100548DBE /* icon-statusitem@2x.png in Resources */,

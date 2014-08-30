@@ -40,6 +40,7 @@
     [DDLog addLogger:DDTTYLogger.sharedInstance];
 
     [AMConfiguration.sharedConfiguration loadConfiguration];
+    NSString *osxMode = [[NSUserDefaults standardUserDefaults] stringForKey:@"AppleInterfaceStyle"];
 
     if ([[AMConfiguration sharedConfiguration] useCanaryBuild]) {
         NSString *canaryAppcastURLString = [[NSBundle mainBundle] infoDictionary][@"SUCanaryFeedURL"];
@@ -48,7 +49,12 @@
 
     RAC(self, statusItem.image) = [RACObserve(AMConfiguration.sharedConfiguration, tilingEnabled) map:^id(NSNumber *tilingEnabled) {
         if (tilingEnabled.boolValue) {
-            return [NSImage imageNamed:@"icon-statusitem"];
+            if ([osxMode isEqualToString:@"Dark"]) {
+                return [NSImage imageNamed:@"icon-statusitem-darkmode"];
+            } else {
+                return [NSImage imageNamed:@"icon-statusitem"];
+            }
+            
         }
         return [NSImage imageNamed:@"icon-statusitem-disabled"];
     }];
@@ -63,7 +69,12 @@
     [super awakeFromNib];
 
     self.statusItem = [NSStatusBar.systemStatusBar statusItemWithLength:NSVariableStatusItemLength];
-    self.statusItem.image = [NSImage imageNamed:@"icon-statusitem"];
+    NSString *osxMode = [[NSUserDefaults standardUserDefaults] stringForKey:@"AppleInterfaceStyle"];
+    if ([osxMode isEqualToString:@"Dark"]) {
+        self.statusItem.image = [NSImage imageNamed:@"icon-statusitem-darkmode"];
+    } else {
+        self.statusItem.image = [NSImage imageNamed:@"icon-statusitem"];
+    }
     self.statusItem.menu = self.statusItemMenu;
     self.statusItem.highlightMode = YES;
 
